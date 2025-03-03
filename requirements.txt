@@ -1,0 +1,8 @@
+pip-chill==1.0.3
+statsmodels==0.14.4
+numpy
+pandas
+matplotlib
+scikit-learn
+tqdm
+pydantic
