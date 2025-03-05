@@ -8,3 +8,4 @@ spline_regression.py
 archive*
 archive
 *.tar.gz
+__pycache__
