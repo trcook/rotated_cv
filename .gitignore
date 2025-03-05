@@ -5,3 +5,6 @@ sanity*.py
 scratch*.py
 test*.py
 spline_regression.py
+archive*
+archive
+*.tar.gz
