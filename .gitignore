@@ -1,2 +1,7 @@
 venv
 *.jsonl
+*.png
+sanity*.py
+scratch*.py
+test*.py
+spline_regression.py
