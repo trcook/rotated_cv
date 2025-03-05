@@ -174,3 +174,4 @@ print(f"rotated_cv error to trend: {hv_true.mean()}")
 plt.plot(out.iloc[0,:].yhats)
 plt.plot(zy,alpha =.3,lw=3)
 plt.plot(Z.T@y_trend)
+
