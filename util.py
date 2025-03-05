@@ -193,3 +193,22 @@ class KRExpResult(KRExpConfig):
     cv: float = None
     true_cv: float = None # indicates how close to trend component
     true_mse: float = None # indicates variance of disturbance term (lower limit of cv score without overfitting)
+
+
+def slow_ft(x,intercept=True):
+    n = x.shape[0]
+    J = n//2
+    vecs = []
+    for i in range(J+1):
+        if i == 0:
+            vecs.append(np.cos(2 * np.pi * i/n* x).reshape(-1,1))
+        elif i/n<.5:
+            vecs.append(
+                np.c_[
+                    np.cos(2*np.pi * i/n * x),
+                    np.sin(2 * np.pi * i/n * x)
+                ]
+            )
+        elif np.isclose(i/n,0.5):
+            vecs.append(np.cos(2*np.pi*1/n*x).reshape(-1,1))
+    return np.hstack(vecs)

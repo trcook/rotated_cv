@@ -1,0 +1,11 @@
+venv
+*.jsonl
+*.png
+sanity*.py
+scratch*.py
+test*.py
+spline_regression.py
+archive*
+archive
+*.tar.gz
+__pycache__

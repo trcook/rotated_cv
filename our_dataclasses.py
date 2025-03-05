@@ -49,3 +49,14 @@ class HRExpResult(HRExpConfig):
     cv: float = None
     true_cv: float = None
     true_mse: float = None
+
+@dataclass
+class LinearExpConfig(EXP):
+    n_vars:int = 1
+
+@dataclass
+class LinearExpResult(LinearExpConfig):
+    cv: float = None
+    n_chosen_vars: float = None
+    true_cv: float = None
+    true_mse: float = None
